@@ -5,23 +5,23 @@
 }:
 
 buildNpmPackage (finalAttrs: {
-  pname = "claude-code-acp";
-  version = "0.16.1";
+  pname = "claude-agent-acp";
+  version = "0.21.0";
 
   src = fetchFromGitHub {
     owner = "zed-industries";
-    repo = "claude-code-acp";
+    repo = "claude-agent-acp";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-/HeAz0jdXhLhYGcwTgthrE7cGjKjro30GQUmAn4egXs=";
+    hash = "sha256-6c6bHuso3diW5ZfHiM2xcxGDTNG0LIL0TZd0MFVpW/E=";
   };
 
-  npmDepsHash = "sha256-poTtwIIPHcgQ2uyIUIWVOpHbdDIzVgympa7aHtuSMok=";
+  npmDepsHash = "sha256-UtiIcjgNCYMFrRpO5AlUbOyutJ3ipwIbcpMi2BqawEk=";
 
   meta = {
     description = "ACP-compatible coding agent powered by the Claude Code SDK";
-    homepage = "https://github.com/zed-industries/claude-code-acp";
+    homepage = "https://github.com/zed-industries/claude-agent-acp";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ storopoli ];
-    mainProgram = "claude-code-acp";
+    mainProgram = "claude-agent-acp";
   };
 })
