@@ -18,7 +18,7 @@ buildNpmPackage (finalAttrs: {
   npmDepsHash = "sha256-UtiIcjgNCYMFrRpO5AlUbOyutJ3ipwIbcpMi2BqawEk=";
 
   meta = {
-    description = "ACP-compatible coding agent powered by the Claude Code SDK";
+    description = "ACP-compatible coding agent powered by the Claude Agent SDK";
     homepage = "https://github.com/zed-industries/claude-agent-acp";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ storopoli ];
